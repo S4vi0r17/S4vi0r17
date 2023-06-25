@@ -3,16 +3,11 @@
 <p align="left"></p>
   <p align="center">
     <samp>
-      <b>
-        Hi There
-        <br>
-        I'm Gustavo, a Student.
-      </b>
       <br>
-        <img src="https://readme-typing-svg.demolab.com?font=Iosevka&size=18&width=435&height=50&lines=I+like+minimal+code.;I+like+Linux.&color=FBD6FF&center=true&vCenter=true" alt="typing-svg">
+        <img src="https://readme-typing-svg.demolab.com?font=Iosevka&duration=4500&pause=2&color=FBD6FF&center=true&vCenter=true&width=435&lines=Hi+there!;I'm+S4v!0r%2C+a+student.;I+like+Linux+and+minimalistic+code.;By+the+way%2C+I+adore+cats." alt="typing-svg">
       <br>
       <b>
-        # Gustavo Benites #
+        Gustavo 平和 Benites 静けさ
       </b>
     </samp>
   </p>
