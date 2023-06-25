@@ -19,3 +19,7 @@
     [<a href="mailto:gbp17@outlook.com">e-mail</a>]
   </samp>
 </p>
+
+<p align="center">
+  <img src="https://i.ibb.co/TWhwyB9/pixil-frame-0.png" alt="imagen" width="160">
+</p>
