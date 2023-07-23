@@ -21,5 +21,5 @@
 </p>
 
 <p align="center">
-  <img src="https://i.ibb.co/JCDy1wf/pixil-frame-0-3.png" alt="imagen" width="160">
+  <img src="https://i.ibb.co/80wDVgH/pixil-frame-0-6.png" alt="imagen" width="160">
 </p>
