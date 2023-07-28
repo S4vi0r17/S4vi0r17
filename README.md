@@ -20,8 +20,8 @@
   </p>
   <p align="center">
     <samp>
-      [<a href="https://www.facebook.com/gustavo.z434z/">facebook</a>]
-      [<a href="mailto:gbp17@outlook.com">e-mail</a>]
+      [<a href="www.linkedin.com/in/EGusBePe">Linkedin</a>]
+      [<a href="mailto:gbp17@outlook.com">E-mail</a>]
     </samp>
   </p>
 </div>
