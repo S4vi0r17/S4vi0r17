@@ -1,6 +1,5 @@
 <div align="justify">
 
-  <p align="left"></p>
   <p align="center">
     <samp>
       <br>
@@ -20,7 +19,7 @@
   </p>
   <p align="center">
     <samp>
-      [<a href="www.linkedin.com/in/EGusBePe">Linkedin</a>]
+      [<a href="https://www.linkedin.com/in/egusbepe/">Linkedin</a>]
       [<a href="mailto:gbp17@outlook.com">E-mail</a>]
     </samp>
   </p>
