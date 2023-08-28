@@ -25,11 +25,3 @@
   </p>
 </div>
 
-<div align=center>
-   <br>
-   <br>
-   <br>
-  
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=S4vi0r17&theme=tokyonight)
-</div>
-
