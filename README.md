@@ -15,7 +15,7 @@
   <p align="right"></p>
 
   <p align="center">
-    <img src="https://i.ibb.co/80wDVgH/pixil-frame-0-6.png" alt="imagen" width="160">
+    <img src="pixarch.png" alt="imagen" width="160">
   </p>
   <p align="center">
     <samp>
