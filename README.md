@@ -17,12 +17,13 @@
   <p align="center">
     <img src="pixarch.png" alt="imagen" width="160">
   </p>
-  <p align="center">
+  <div align="center">
     <samp>
       [<a href="https://www.linkedin.com/in/egusbepe/">Linkedin</a>]
+      [<a href="https://portfolio-gbp.vercel.app/">Portfolio</a>]
       [<a href="mailto:gbp17@outlook.com">E-mail</a>]
     </samp>
-  </p>
+  </div>
 </div>
 
 <details><summary> Github Stats </summary><div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=S4vi0r17&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=default&hide_border=true&order=2" height="150" alt="languages graph"  /></div></details>
