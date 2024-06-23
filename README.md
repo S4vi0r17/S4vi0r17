@@ -26,4 +26,4 @@
   </div>
 </div>
 
-<details><summary> Github Stats </summary><div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=S4vi0r17&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=default&hide_border=true&order=2" height="150" alt="languages graph"  /></div></details>
+<details><summary> Github Stats </summary><div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=S4vi0r17&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=8&theme=default&hide_border=true&order=2" height="150" alt="languages graph"  /></div></details>
