@@ -20,7 +20,7 @@
   <div align="center">
     <samp>
       [<a href="https://www.linkedin.com/in/egusbepe/">Linkedin</a>]
-      [<a href="https://portfolio-gbp.vercel.app/">Portfolio</a>]
+      [<a href="https://www.s4vi0r.tech/">Portfolio</a>]
       [<a href="mailto:gbp17@outlook.com">E-mail</a>]
     </samp>
   </div>
