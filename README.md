@@ -19,9 +19,9 @@
   </p>
   <div align="center">
     <samp>
-      [<a href="https://www.linkedin.com/in/egusbepe/">Linkedin</a>]
-      [<a href="https://www.s4vi0r.tech/">Portfolio</a>]
-      [<a href="mailto:gbp17@outlook.com">E-mail</a>]
+      [<a href="https://www.linkedin.com/in/egusbepe">Linkedin</a>]
+      [<a href="https://s4vi0r.tech">Portfolio</a>]
+      [<a href="mailto:portfolio-savior.mold204@slmails.com">E-mail</a>]
     </samp>
   </div>
 </div>
