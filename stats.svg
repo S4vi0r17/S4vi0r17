@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="130" viewBox="0 0 320 130">
+<style>
+  text { font: 12px Iosevka, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #57606a; }
+  .dim { fill: #8c959f; }
+  .bar { fill: #c77dd1; }
+  .track { fill: #eaeef2; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #c9d1d9; }
+    .dim { fill: #6e7681; }
+    .bar { fill: #fbd6ff; }
+    .track { fill: #21262d; }
+  }
+</style>
+<text x="0" y="16">Python</text><rect class="track" x="96" y="11" width="168" height="3" rx="1.5"/><rect class="bar" x="96" y="11" width="67.0" height="3" rx="1.5"/><text class="dim" x="320" y="16" text-anchor="end">39.9%</text><text x="0" y="38">TypeScript</text><rect class="track" x="96" y="33" width="168" height="3" rx="1.5"/><rect class="bar" x="96" y="33" width="21.8" height="3" rx="1.5"/><text class="dim" x="320" y="38" text-anchor="end">13.0%</text><text x="0" y="60">Kotlin</text><rect class="track" x="96" y="55" width="168" height="3" rx="1.5"/><rect class="bar" x="96" y="55" width="16.7" height="3" rx="1.5"/><text class="dim" x="320" y="60" text-anchor="end">9.9%</text><text x="0" y="82">Java</text><rect class="track" x="96" y="77" width="168" height="3" rx="1.5"/><rect class="bar" x="96" y="77" width="12.4" height="3" rx="1.5"/><text class="dim" x="320" y="82" text-anchor="end">7.4%</text>
+<text xml:space="preserve" x="69.2" y="122" text-anchor="middle">447<tspan class="dim"> commits</tspan></text><text xml:space="preserve" x="167.2" y="122" text-anchor="middle">36<tspan class="dim"> pulls</tspan></text><text xml:space="preserve" x="258.0" y="122" text-anchor="middle">13<tspan class="dim"> issues</tspan></text>
+</svg>
