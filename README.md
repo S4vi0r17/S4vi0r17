@@ -18,12 +18,10 @@
     <img src="pixarch.png" alt="imagen" width="160">
   </p>
   <div align="center">
-    <samp>
-      [<a href="https://www.linkedin.com/in/egusbepe">Linkedin</a>]
-      [<a href="https://s4vi0r.tech">Portfolio</a>]
-      [<a href="mailto:portfolio-savior.mold204@slmails.com">E-mail</a>]
-    </samp>
+    <a href="https://www.linkedin.com/in/egusbepe"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://s4vi0r.dev"><img src="assets/portfolio.svg" alt="Portfolio"></a>
+    <a href="mailto:portfolio-savior.mold204@slmails.com"><img src="assets/email.svg" alt="E-mail"></a>
   </div>
 </div>
 
-<details><summary> Github Stats </summary><div align="center"><img src="https://raw.githubusercontent.com/S4vi0r17/S4vi0r17/output/stats.svg" width="320" alt="github stats" /></div></details>
+<details><summary> Github Stats </summary><div align="center"><img src="https://raw.githubusercontent.com/S4vi0r17/S4vi0r17/stats/stats.svg" width="320" alt="github stats" /></div></details>

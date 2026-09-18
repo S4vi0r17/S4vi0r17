@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="20" viewBox="0 0 88 20">
+<style>
+  text { font: 14px Iosevka, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #c77dd1; }
+  .dim { fill: #8c959f; }
+  @media (prefers-color-scheme: dark) { text { fill: #fbd6ff; } .dim { fill: #6e7681; } }
+</style>
+<text x="44" y="14" text-anchor="middle"><tspan class="dim">[</tspan>LinkedIn<tspan class="dim">]</tspan></text>
+</svg>
