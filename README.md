@@ -26,4 +26,4 @@
   </div>
 </div>
 
-<details><summary> Github Stats </summary><div align="center"><img src="stats.svg" width="320" alt="github stats" /></div></details>
+<details><summary> Github Stats </summary><div align="center"><img src="https://raw.githubusercontent.com/S4vi0r17/S4vi0r17/output/stats.svg" width="320" alt="github stats" /></div></details>
