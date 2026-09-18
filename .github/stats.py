@@ -66,21 +66,20 @@ def render(sizes, counts):
             f'<rect class="bar" x="{bar_x}" y="{y - 5}" width="{max(bar_w * pct / 100, 3):.1f}" height="3" rx="1.5"/>'
             f'<text class="dim" x="{width}" y="{y}" text-anchor="end">{pct:.1f}%</text>'
         )
-    parts = []
-    for label, n in counts.items():
-        if parts:
-            parts.append(("dim", "·"))
-        parts += [("", n), ("dim", label)]
+    footer_y = 44 + len(langs) * row + 22
     footer = "".join(
-        f'<tspan class="{cls}" dx="{6 if i else 0}">{text}</tspan>'
-        for i, (cls, text) in enumerate(parts)
+        f'<text class="num" x="{x:.0f}" y="{footer_y}" text-anchor="middle">{n}</text>'
+        f'<text class="dim small" x="{x:.0f}" y="{footer_y + 16}" text-anchor="middle">{label}</text>'
+        for i, (label, n) in enumerate(counts.items())
+        for x in [width * (2 * i + 1) / (2 * len(counts))]
     )
-    footer_y = 44 + len(langs) * row + 18
-    height = footer_y + 8
+    height = footer_y + 22
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
 <style>
   text {{ font: 12px Iosevka, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #57606a; }}
   .dim {{ fill: #8c959f; }}
+  .num {{ font-size: 14px; }}
+  .small {{ font-size: 11px; }}
   .bar {{ fill: #c77dd1; }}
   .track {{ fill: #eaeef2; }}
   @media (prefers-color-scheme: dark) {{
@@ -92,7 +91,7 @@ def render(sizes, counts):
 </style>
 <text class="dim" x="0" y="16">languages</text>
 {"".join(rows)}
-<text x="0" y="{footer_y}">{footer}</text>
+{footer}
 </svg>
 """
 
