@@ -15,7 +15,7 @@
   <p align="right"></p>
 
   <p align="center">
-    <img src="pixarch.png" alt="imagen" width="160">
+    <img src="assets/pixarch.png" alt="imagen" width="160">
   </p>
   <div align="center">
     <a href="https://www.linkedin.com/in/egusbepe"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
