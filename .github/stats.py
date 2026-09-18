@@ -66,10 +66,17 @@ def render(sizes, counts):
             f'<rect class="bar" x="{bar_x}" y="{y - 5}" width="{max(bar_w * pct / 100, 3):.1f}" height="3" rx="1.5"/>'
             f'<text class="dim" x="{width}" y="{y}" text-anchor="end">{pct:.1f}%</text>'
         )
-    footer = '<tspan class="dim"> · </tspan>'.join(
-        f'{n}<tspan class="dim"> {label}</tspan>' for label, n in counts.items()
-    )
     footer_y = 44 + len(langs) * row + 18
+    char_w = 7.2
+    widths = [len(f"{n} {label}") * char_w for label, n in counts.items()]
+    gap = (width - sum(widths)) / (len(widths) + 1)
+    x, footer = gap, ""
+    for (label, n), w in zip(counts.items(), widths):
+        footer += (
+            f'<text xml:space="preserve" x="{x + w / 2:.1f}" y="{footer_y}" text-anchor="middle">'
+            f'{n}<tspan class="dim"> {label}</tspan></text>'
+        )
+        x += w + gap
     height = footer_y + 8
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
 <style>
@@ -86,7 +93,7 @@ def render(sizes, counts):
 </style>
 <text class="dim" x="0" y="16">languages</text>
 {"".join(rows)}
-<text xml:space="preserve" x="{width}" y="{footer_y}" text-anchor="end">{footer}</text>
+{footer}
 </svg>
 """
 
