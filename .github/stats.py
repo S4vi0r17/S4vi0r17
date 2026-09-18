@@ -4,13 +4,15 @@ import urllib.request
 from xml.sax.saxutils import escape
 
 USER = "S4vi0r17"
-TOP = 6
+TOP = 4
 EXCLUDE = {"Jupyter Notebook"}
 
 QUERY = """
 query($login: String!, $cursor: String) {
   user(login: $login) {
     pullRequests { totalCount }
+    issues { totalCount }
+    contributionsCollection { totalCommitContributions }
     repositories(ownerAffiliations: OWNER, isFork: false, first: 100, after: $cursor) {
       pageInfo { hasNextPage endCursor }
       nodes { languages(first: 20) { edges { size node { name } } } }
@@ -41,11 +43,16 @@ def fetch():
                 if name not in EXCLUDE:
                     sizes[name] = sizes.get(name, 0) + edge["size"]
         if not repos["pageInfo"]["hasNextPage"]:
-            return sizes, user["pullRequests"]["totalCount"]
+            counts = {
+                "commits": user["contributionsCollection"]["totalCommitContributions"],
+                "prs": user["pullRequests"]["totalCount"],
+                "issues": user["issues"]["totalCount"],
+            }
+            return sizes, counts
         cursor = repos["pageInfo"]["endCursor"]
 
 
-def render(sizes, prs):
+def render(sizes, counts):
     total = sum(sizes.values())
     langs = sorted(sizes.items(), key=lambda kv: kv[1], reverse=True)[:TOP]
     width, bar_x, bar_w, row = 320, 96, 168, 22
@@ -54,13 +61,22 @@ def render(sizes, prs):
         y = 44 + i * row
         pct = size / total * 100
         rows.append(
-            f'<text x="0" y="{y}">{escape(name.lower())}</text>'
+            f'<text x="0" y="{y}">{escape(name)}</text>'
             f'<rect class="track" x="{bar_x}" y="{y - 5}" width="{bar_w}" height="3" rx="1.5"/>'
             f'<rect class="bar" x="{bar_x}" y="{y - 5}" width="{max(bar_w * pct / 100, 3):.1f}" height="3" rx="1.5"/>'
             f'<text class="dim" x="{width}" y="{y}" text-anchor="end">{pct:.1f}%</text>'
         )
-    pr_y = 44 + len(langs) * row + 18
-    height = pr_y + 8
+    parts = []
+    for label, n in counts.items():
+        if parts:
+            parts.append(("dim", "·"))
+        parts += [("", n), ("dim", label)]
+    footer = "".join(
+        f'<tspan class="{cls}" dx="{6 if i else 0}">{text}</tspan>'
+        for i, (cls, text) in enumerate(parts)
+    )
+    footer_y = 44 + len(langs) * row + 18
+    height = footer_y + 8
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
 <style>
   text {{ font: 12px Iosevka, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #57606a; }}
@@ -76,8 +92,7 @@ def render(sizes, prs):
 </style>
 <text class="dim" x="0" y="16">languages</text>
 {"".join(rows)}
-<text class="dim" x="0" y="{pr_y}">pull requests</text>
-<text x="{width}" y="{pr_y}" text-anchor="end">{prs}</text>
+<text x="0" y="{footer_y}">{footer}</text>
 </svg>
 """
 
