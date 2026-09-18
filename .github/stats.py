@@ -58,7 +58,7 @@ def render(sizes, counts):
     width, bar_x, bar_w, row = 320, 96, 168, 22
     rows = []
     for i, (name, size) in enumerate(langs):
-        y = 44 + i * row
+        y = 16 + i * row
         pct = size / total * 100
         rows.append(
             f'<text x="0" y="{y}">{escape(name)}</text>'
@@ -66,7 +66,7 @@ def render(sizes, counts):
             f'<rect class="bar" x="{bar_x}" y="{y - 5}" width="{max(bar_w * pct / 100, 3):.1f}" height="3" rx="1.5"/>'
             f'<text class="dim" x="{width}" y="{y}" text-anchor="end">{pct:.1f}%</text>'
         )
-    footer_y = 44 + len(langs) * row + 18
+    footer_y = 16 + len(langs) * row + 18
     char_w = 7.2
     widths = [len(f"{n} {label}") * char_w for label, n in counts.items()]
     gap = (width - sum(widths)) / (len(widths) + 1)
@@ -91,7 +91,6 @@ def render(sizes, counts):
     .track {{ fill: #21262d; }}
   }}
 </style>
-<text class="dim" x="0" y="16">languages</text>
 {"".join(rows)}
 {footer}
 </svg>
