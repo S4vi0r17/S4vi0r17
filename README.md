@@ -12,7 +12,6 @@
       </b>
     </samp>
   </p>
-  <p align="right"></p>
 
   <p align="center">
     <img src="assets/pixarch.png" alt="imagen" width="160">
@@ -24,4 +23,7 @@
   </div>
 </div>
 
-<details><summary> Github Stats </summary><div align="center"><img src="https://raw.githubusercontent.com/S4vi0r17/S4vi0r17/stats/stats.svg" width="320" alt="github stats" /></div></details>
+<p align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/S4vi0r17/S4vi0r17/stats/stats.svg" width="320" alt="github stats">
+</p>
